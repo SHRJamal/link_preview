@@ -1,0 +1,18 @@
+include: package:effective_dart/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - lib/**/*.g.dart
+    - lib/**/*.freezed.dart
+    - lib/generated/**
+  errors:
+    missing_required_param: error
+
+linter:
+  rules:
+    public_member_api_docs: false
+    avoid_catches_without_on_clauses: false
+    avoid_positional_boolean_parameters: false
+    prefer_mixin: false
+    type_annotate_public_apis: false
+    lines_longer_than_80_chars: false
